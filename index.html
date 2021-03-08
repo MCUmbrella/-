@@ -1,1 +1,35 @@
-<!DOCTYPE HTML><html><head><meta charset=UTF-8 lang=en /><title>www.floatationdevice.vip</title></head><body><img src="safety.jpg" alt="safety.jpg"/></body></html>
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+    <meta charset=UTF-8 />
+    <meta property="og:title" content="www.floatationdevice.vip" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.floatationdevice.vip/" />
+    <meta property="og:image" content="http://www.floatationdevice.vip/safety.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="http://www.floatationdevice.vip/safety.jpg" />
+    <meta name="twitter:site" content="@MCUmbrella" />
+    <meta name="twitter:creator" content="@MCUmbrella" />
+    <meta name="twitter:domain" content="www.floatationdevice.vip" />
+    <meta property="title" content="www.floatationdevice.vip" />
+    <title>www.floatationdevice.vip</title>
+</head>
+<body>
+    <img src="safety.jpg" alt="" id="safety" style="visibility: hidden;"/>
+    <p id="mobile" style="visibility: hidden;">The mobile version of this service is still in development.</p>
+    <script>
+        var ua=navigator.userAgent;
+        var mua=new Array("Android","iPhone","SymbianOS","Windows Phone","iPad","iPod");
+        var isPC=true;
+        for (var a=0;a<mua.length;a++)
+        {
+            if(ua.indexOf(mua[a])>0){isPC=false;break;}
+        }
+        if (!isPC)
+        {
+            document.getElementById("mobile").style.visibility="visible";
+        }else{document.getElementById("safety").style.visibility="visible";}
+    </script>
+</body>
+</html>
