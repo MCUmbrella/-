@@ -22,14 +22,9 @@
         var ua=navigator.userAgent;
         var mua=new Array("Android","iPhone","SymbianOS","Windows Phone","iPad","iPod");
         var isPC=true;
-        for (var a=0;a<mua.length;a++)
-        {
-            if(ua.indexOf(mua[a])>0){isPC=false;break;}
-        }
-        if (!isPC)
-        {
-            document.getElementById("mobile").style.visibility="visible";
-        }else{document.getElementById("safety").style.visibility="visible";}
+        for(var a=0;a<mua.length;a++){if(ua.indexOf(mua[a])>0){isPC=false;break;}}
+        if(!isPC){document.getElementById("mobile").style.visibility="visible";}
+        else{document.getElementById("safety").style.visibility="visible";}
     </script>
 </body>
 </html>
